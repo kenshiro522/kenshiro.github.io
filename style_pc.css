@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+   font-size: 40px;
+   font-family: 'Jost'; 
+   background-color: #000000;
+   color: white;
+}
+
+.text {
+    font-size: 90px;
+    text-align: center;
+}
+
+
+
+.bgParallax {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
