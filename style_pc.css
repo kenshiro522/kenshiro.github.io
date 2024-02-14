@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-  --main-color: #00fff5;
+  --main-color: #000000;
 }
 
 /*--------------------------------
@@ -15,7 +15,7 @@ body {
   
   font-size: 16px;
   color: #333;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 a {
@@ -30,43 +30,7 @@ img {
 
 
 
-/*--------------------------------
- ボタン
----------------------------------*/
-.btn {
-  display: inline-block;
-  position: relative;
-  width: 230px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-  text-align: center;
-  margin: 0 auto;
-  padding: 20px 0;
-  transition: box-shadow 0.3s;
-  background-color: var(--main-color);
-}
 
-.btn:hover {
-  box-shadow: 0 0 18px 5px rgba(0, 255, 174, 0.6);
-}
-
-.btn--sm {
-  width: 164px;
-  font-size: 15px;
-  padding: 15px 0;
-}
-
-/*--------------------------------
- レイアウト
----------------------------------*/
-.container {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
 /*--------------------------------
  ローディング
 ---------------------------------*/
@@ -77,7 +41,7 @@ img {
   z-index: 9000;
   width: 100vw;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .loading-animation {
@@ -187,7 +151,7 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+paraIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
@@ -212,18 +176,19 @@ SOFTWARE. */
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 87.5vh;
   background-image: linear-gradient(
     45deg,
-    rgba(0, 0, 0, 0.2) 50%,
-    rgba(0, 0, 0, 0.5) 50%
+    rgba(206, 206, 206, 0.2) 50%,
+    rgba(187, 187, 187, 0.5) 50%
   );
   background-size: 4px 4px;
 }
 
 .bgParallax-video {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+  margin-left: -180px;
   vertical-align: bottom;
   object-fit: cover;
 }
@@ -260,119 +225,23 @@ SOFTWARE. */
   display: flex;
   position: relative;
   align-items: center;
-  color: #fff;
+  color: #000000;
   column-gap: 30px;
+  
 }
 .gnav-about {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1;
   letter-spacing: 0.1em;
+  margin-right: 15px;
 }
 
-
-.gnav-about  a::after {
-  position: absolute;
-  left: 0;
-  content: '';
-  width: 21%;
-  height: 3px;
-  background: #ffffff;
-  bottom: -3px;
-  transform: scale(0, 1);
-  transform-origin: right top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
-  transition: transform 0.3s;  /*変形の時間*/
-  }
-  
-  .gnav-about a:hover::after {
-  transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
-  transform-origin: left top; /*左から右に向かう*/
-}
-
-
-
-.gnav-works {
-  font-size: 16px;
+.gnav-contact {
+  font-size:19px;
   line-height: 1;
   letter-spacing: 0.1em;
-  color:white;
-}
-
-.gnav-works  a::after {
-  position: absolute;
-  left: 0;
-  content: '';
-  width: 20%;
-  height: 3px;
-  background: #ffffff;
-  left: 80px;
-  bottom: -3px;
-  transform: scale(0, 1);
-  transform-origin: right top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
-  transition: transform 0.3s;  /*変形の時間*/
-  }
-
-  .gnav-works a:hover::after {
-    transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
-    transform-origin: left top; /*左から右に向かう*/
-    }
-    
-
-    .gnav-contact {
-      font-size: 16px;
-      line-height: 1;
-      letter-spacing: 0.1em;
-      color:white;
-    }
-    
-    .gnav-contact  a::after {
-      position: absolute;
-      left: 0;
-      content: '';
-      width: 26%;
-      height: 3px;
-      background: #ffffff;
-      left: 160px;
-      bottom: -3px;
-      transform: scale(0, 1);
-      transform-origin: right top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
-      transition: transform 0.3s;  /*変形の時間*/
-      }
-    
-      .gnav-contact a:hover::after {
-        transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
-        transform-origin: left top; /*左から右に向かう*/
-        }
-    
-
-  
-
-
-
-
-
-    
-  
-
-.gnav-audio {
-  position: absolute;
-  right: 30px;
-  bottom: -10px;
-}
-
-.audioSwitch {
-  font-size: 13px;
-  line-height: 1;
-  color: #bfbfbf;
-  cursor: pointer;
-}
-
-.audioSwitch.on {
-  color: #fff;
-}
-
-.audioSwitch-icon {
-  font-size: 18px;
-  vertical-align: text-bottom;
+  color:rgb(0, 0, 0);
+  margin-right: 20px;
 }
 
 /*--------------------------------
@@ -390,90 +259,18 @@ SOFTWARE. */
   right: 0;
   bottom: 0;
   width: 430px;
-  height: 40px;
+  height: 10px;
   background-image: url(./assets/img/bg-line-bottom-black.svg);
 }
 
-.mv-titleArea {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  color: #fff;
-  transform: translateY(-50%);
+.mv-logo{
+  display: block;
+  text-align: center;
+  padding-top: 350px;
+  
 }
 
-.mv-label {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.2em;
-  margin-bottom: 30px;
-}
 
-.mv-title {
-  font-size: 140px;
-  font-weight: 600;
-  line-height: 0.9;
-  letter-spacing: 0.05em;
-  margin-bottom: 10px;
-}
-
-.mv-subtitle {
-  font-size: 34px;
-  line-height: 1;
-  letter-spacing: 1em;
-  margin-bottom: 50px;
-}
-
-.newsBox {
-  display: flex;
-  position: absolute;
-  right: 30px;
-  bottom: 50px;
-  overflow: hidden;
-  align-items: center;
-  width: 360px;
-  line-height: 1;
-  padding: 0.5em 0;
-  border: 1px solid var(--main-color);
-  background-color: #000;
-}
-
-.newsBox p:after {
-  content: "";
-  white-space: nowrap;
-  padding-right: 50px;
-}
-
-.newsBox p {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 1;
-  color: #fff;
-  white-space: nowrap;
-  margin: 0;
-  padding-left: 360px;
-  animation-name: newsBox-animation;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-@keyframes newsBox-animation {
-  from {
-    transform: translate(0%);
-  }
-  to {
-    transform: translate(-100%);
-  }
-}
-
-.newsBox-date {
-  margin-right: 1em;
-}
-
-.newsBox-body {
-  color: var(--main-color);
-}
 
 .scrolldown {
   position: absolute;
@@ -561,11 +358,11 @@ SOFTWARE. */
 
 .headingPrimary {
   position: relative;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-bottom: 70px;
   text-align: center;
 }
@@ -590,12 +387,12 @@ SOFTWARE. */
 }
 
 /*--------------------------------
- ストーリー
+ works
 ---------------------------------*/
 .story {
   color: #fff;
   padding: 140px 0;
-  background-color: #ffffff;
+  background-color: #000000;
   background-image: url(./assets/img/bg_story.webp);
   background-repeat: no-repeat;
   background-position: center center;
@@ -646,6 +443,50 @@ SOFTWARE. */
   transform: skew(5deg, 0deg);
   box-shadow: -7px 7px var(--main-color);
 }
+
+/*--------------------------------
+works-video 
+---------------------------------*/
+
+
+ul{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.saucy{
+ display: block;
+ width: 90%; 
+ padding-left: 40px;
+}
+
+.tokyo_cart{
+  display: block;
+  width: 90%; 
+  padding-left: 40px;
+ }
+
+.ag3video{
+  width: 50%;
+  background-color: #00fff5;
+}
+
+.video-text{
+  display: block;
+  text-align: center;
+}
+
+.video-title{
+  display: block;
+  font-size: 25px;
+
+  
+}
+
+
+
 
 /*--------------------------------
 CTA
@@ -776,6 +617,7 @@ CTA
   .headingPrimary {
     font-size: 50px;
     margin-bottom: 45px;
+    color: white;
     
   }
 
