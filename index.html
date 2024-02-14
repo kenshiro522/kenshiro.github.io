@@ -2,15 +2,15 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Takeru Sato video creater portfolio site.</title>
+<title>aimant</title>
 
-<meta name="description" content="映像クリエイター佐藤健のポートフォリオサイト">
+<meta name="description" content="映像制作会社エマンのポートフォリオサイト">
 <meta name="keywords" content="映像,動画,撮影,カメラ,movie,video,camera,">
 <meta name="author" content="kenshiro-yamazawa" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link rel="icon"  href="assets/images/favicon.webp" />
 <link rel="stylesheet" type="text/css" media="only screen and (max-device-width:666px),print" href="/demo/css/style_sp.css"/>
-<link rel="stylesheet" type="text/css" media="only screen and (min-device-width:667px),print" href="style_pc.css" />
+<link rel="stylesheet" type="text/css" media="only screen and (min-device-width:667px),print" href="/css/style_pc.css" />
 <link
   rel="stylesheet"
   href="css/destyle.css"
@@ -46,7 +46,7 @@
 
   <div class="bgParallax">
     <video class="bgParallax-video" playsinline muted autoplay loop>
-      <source src="saucy.mp4" type="video/mp4">
+      <source src="assets/video/saucy.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -60,35 +60,19 @@
         <nav class="gnav">
           <ul class="gnav-list">
             <li class="gnav-about"><a href="#about">about</a></li>
-            <li class="gnav-works"><a href="#works">works</a></li>
             <li class="gnav-contact"><a href="#">contact</a></li>
           </ul>
-          <div class="gnav-audio">
-            <div class="audioSwitch">
-              <button id="js-audio-play"><span class="audioSwitch-text">SOUND OFF</span>
-                <span class="audioSwitch-icon material-icons-round">volume_up</span></button>
-            </div>
-            <audio id="js-audio" loop>
-              <source src="assets/audio/cinematic-melody-main-9785.mp3" type="audio/mp3">
-            </audio>
-          </div>
+          
         </nav>
       </div>
     </div>
   </header>
 
   <section class="mv">
-    <div class="mv-titleArea">
-      <div class="mv-label">VR GAME</div>
-      <h1 class="mv-title">Planet<br>Hunters</h1>
-      <div class="mv-subtitle">惑星を奪還せよ</div>
-      <div class="mv-btn">
-        <a href="#" class="btn">PLAY NOW</a>
-      </div>
+    <div class="mv-logo">
+      <img class="main-img" src="assets/images/aimant.png">
     </div>
-    <div class="newsBox">
-      <p><span class="newsBox-date">2030.02.20</span><span class="newsBox-body">バージョン5.6リリース：アバター・アイテム大量追加</span></p>
-    </div>
+    
     <div class="scrolldown"><span>Scroll</span></div>
   </section>
   
@@ -97,34 +81,35 @@
       <h2 class="headingPrimary">works</h2> 
       <div class="container">
         <div class="story-body">
-          <div class="story-columnWrap">
-            <div class="story-column">
-              <div class="story-desc">
-               
-                <div class="story-title">奪われた故郷の星を取り戻せ<br>壮大なSFファンタジー</div>
-                <div class="story-text">
-                  <p>
-                    銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。将軍の側近マンチカンは軍政府に従わない人間を辺境の星ニャゴーへ強制的に追放。食料や資源の乏しいニャゴーでは多くの難民が発生し飢餓に苦しんでいた。ニャゴーのスラム街で育った孤児の姉弟がいた。姉のミケと弟のタマは母親をボスネコ将軍に殺された事実を知る。母の復讐のため、そして故郷の惑星ネコチャンを奪還すべく、ミケとタマはいま行動に出る！
-                  </p>
+         
                 </div>
               </div>
-              <div class="ag2video" data-ag2video>
-                <video src="assets/video/saucy.mp4" muted="true"></video>
+              <ul>
+                <div class="story-video_01">
+                <li class="ag2video" data-ag2video>
+                <video src="assets/video/saucy.mp4" muted="true" class="saucy"></video>
+                </li>
+                <div class="video-text">
+                <p class="video-title">Title</p> 
+                <p class="video-kinds">web commercial</p> 
+                </div>
+              </div>
+              <div class="story-video_02">
+              <li class="ag2video" data-ag2video>
+                <video src="assets/video/saucy.mp4" muted="true" class="tokyo_cart"></video>
+                <div class="video-text">
+                <p class="video-title">Title</p>
+                <p class="video-kinds">web commmercial</p> 
+              </li>
               </div>
             </div>
+            <ul>
+    
+            </div>
 
-            <div class="story-column">
-              <div class="story-desc">
-                <div class="story-title">隠された陰謀を暴け<br>衝撃的な事実に驚愕</div>
-                <div class="story-text">
-                  <p>
-                    ミケとタマはネコジャラシ作戦により軍政府の最新鋭の小型船チュールを奪うことに成功。チュールのハイテンションワープ恒星間航行により惑星ネコチャンへあとわずか３時間で到着という時、小惑星帯アビシニアンで謎の救難信号を受信する。意外にも信号の発信源はボスネコ将軍だった。彼は今にも絶えそうなかすれた声で「私はおまえたちミケとタマの父親なのだ」と語る。その瞬間、ミケとタマの育ての親同然で仲間のはずのホワイトオッドアイがタマの背中を刀で切り裂いたのだった......
-                  </p>
-                </div>
+           
               </div>
-              <div class="story-img">
-                <img src="assets/img/story02.webp" alt="謎の人物">
-              </div>
+              
             </div>
           </div>
 
@@ -134,36 +119,9 @@
     </section>
 
     <div class="cta cta--01">
-      <div class="container">
-        <div class="cta-body">
-          <div class="cta-title">ARE YOU READY TO FIGHT?</div>
-          <div class="cta-btn"><a href="#" class="btn">PLAY NOW</a></div>
-        </div>
-      </div>
-    </div>
+ 
 
-    <section class="trailer" id="trailer">
-      <div class="container">
-        <div class="trailer-body">
-          <h2 class="headingPrimary headingPrimary--reverse">TRAILER</h2>
-          <div class="trailer-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RO_RRKTYzUY"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="cta cta--02">
-      <div class="container">
-        <div class="cta-body">
-          <div class="cta-title">ARE YOU READY TO FIGHT?</div>
-          <div class="cta-btn"><a href="#" class="btn">PLAY NOW</a></div>
-        </div>
-      </div>
-    </div>
+   
 
   </main>
 
@@ -191,13 +149,10 @@
   </footer>
   <!-- /footer -->
 
-  <div class="spCTA">
-    <a href="#" class="btn">PLAY NOW</a>
-  </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer">
