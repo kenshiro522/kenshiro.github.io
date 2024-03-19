@@ -69,42 +69,78 @@
              <p>お仕事のご相談など、幅広いご相談をお待ちしております。</p>
           
             </div>  
-          <form action="contact.php" method="post">
-            <label for="rendou">名前：</label> <input id="rendou" type="text" name="yourname">
-            <label for="mail">メール：</label>
-            <input id="mail" type="email" name="mail">
-
-            <label for="comment">コメント</label>
-            <textarea id="comment" name="comment"></textarea>
-
-            <input type="submit" value="送信する">
-
-           </div>   
-
-
-           </div>   
-                </div>
+         
+    <div class="box_con08">
+      <form method="post" action="mail.php">
+      <ul class="formTable">
+      <li>
+          <p class="title"><em>確認</em></p>
+          <div class="box_det">
+               <div class="box_br">
+                   <label>
+                     <input type="radio" name="gender" value="テキスト1">
+                     テキスト1
+                  </label>
               </div>
-              <ul>
-                <div class="story-video_01">
-                <li class="ag2video" data-ag2video>
-               
-                
+              <div class="box_br">
+                  <label>
+                      <input type="radio" name="gender" value="テキスト2">
+                      テキスト2
+                  </label>
               </div>
-            </div>
-            <ul>
-    
-            </div>
-
-           
-              </div>
-              
-            </div>
           </div>
-
-        </div>
-
+        </li>
+        <li>
+          <p class="title"><em>ご用件</em></p>
+          <div class="box_det"><select name="ご用件">
+              <option value="">選択してください</option>
+              <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+              <option value="リンクについて">リンクについて</option>
+            </select></td>
+        </li>
+        <li>
+          <p class="title"><em>お名前</em></p>
+          <div class="box_det"><input size="20" type="text" class="wide" name="お名前" /></div>
+        </li>
+        <li>
+          <p class="title"><em>Mail（半角）</em></p>
+          <div class="box_det"><input size="30" type="text" class="wide" name="Email" /></div>
+        </li>
+        <li>
+          <p class="title"><em>お問い合わせ内容</em></p>
+          <div class="box_det"><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></div>
+        </li>
+      </ul>
+      <div class="con_pri">
+          <div class="box_pri">
+              <div class="box_tori">
+                  <h4>プライバシー</h4>
+                  <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+              </div>
+              <div class="box_num">
+                  <h4>プライバシー</h4>
+                  <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+              </div>
+              <div class="box_num">
+                  <h4>プライバシー</h4>
+                  <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+              </div>
+              <div class="box_num">
+                  <h4>プライバシー</h4>
+                  <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+              </div>
+          </div>
       </div>
+      <div class="box_check">
+          <label>
+              <input type="checkbox" name="acceptance-714" value="1" aria-invalid="false" class="agree"><span class="check">プライバシーポリシーに同意する</span>
+          </label>
+      </div>
+      <p class="btn">
+          <span><input type="submit" value="　 確認 　" /></span>
+      </p>
+    </form>
+  </div>
     </section>
 
     <div class="cta cta--01">
@@ -156,7 +192,7 @@
 
 
 
-<!--
+
     <div class="box_con08">
         <form method="post" action="mail.php">
         <ul class="formTable">
