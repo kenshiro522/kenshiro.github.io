@@ -1099,3 +1099,490 @@ margin-top: 30px;
    }
 
    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*デザインcss↓*/
+.box_con08 {
+  max-width: 900px;
+  margin: 0  auto;
+}
+@media only screen and (max-width: 768px) {
+  .box_con08 {
+    width: 95%;
+  }
+}
+.box_con08 form {
+  width: 100%;
+}
+.box_con08 form ul {
+  width: 100%;
+  background: #eee;
+}
+.box_con08 form ul li {
+  position: relative;
+  overflow: hidden;
+  margin: .5em 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 769px) {
+  .box_con08 form ul li {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+@media print {
+  .box_con08 form ul li {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+.ie8 .box_con08 form ul li {
+  display: -webkit-flex;
+  display: flex;
+}
+.box_con08 form ul li .title {
+  position: relative;
+  width: 30%;
+  font-weight: normal;
+  padding: 1em;
+  position: relative;
+  color: #1c2e53;
+}
+@media only screen and (min-width: 769px) {
+  .box_con08 form ul li .title {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+@media print {
+  .box_con08 form ul li .title {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+.ie8 .box_con08 form ul li .title {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .box_con08 form ul li .title {
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: .8em .2em;
+    color: #fff;
+    background: #1c2e53;
+  }
+}
+.box_con08 form ul li .title em {
+  position: relative;
+  z-index: 1;
+}
+.box_con08 form ul li .title span {
+  background: #cd6f55;
+  padding: 0 .3em;
+  color: #fff;
+  margin-left: .5em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.box_con08 form ul li .box_det {
+  width: 70%;
+  position: relative;
+  padding: 1em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  .box_con08 form ul li .box_det {
+    padding: 1.5em .5em;
+    display: block;
+    width: 100%;
+  }
+}
+.box_con08 form ul li .box_br {
+  display: block;
+}
+.box_con08 form ul li select, .box_con08 form ul li textarea, .box_con08 form ul li .wide {
+  width: 100%;
+  height: 3em;
+  padding: .5em;
+  border: none;
+  outline: none;
+  background: transparent;
+  background: #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.box_con08 form ul li textarea {
+  height: 10em;
+}
+
+/*プライバシーのデザインcss↓*/
+.con_pri {
+  max-width: 700px;
+  margin: 0  auto;
+}
+@media only screen and (max-width: 768px) {
+  .con_pri {
+    width: 95%;
+  }
+}
+.con_pri .box_pri {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #cdcdcd;
+  background: #f7f7f7;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 20px 55px;
+}
+@media only screen and (max-width: 768px) {
+  .con_pri .box_pri {
+    margin-top: 4%;
+    padding: 3%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .con_pri .box_pri {
+    padding: 4%;
+  }
+}
+.con_pri .box_pri .box_tori {
+  text-align: left;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .con_pri .box_pri .box_tori {
+    margin-top: 4%;
+  }
+}
+.con_pri .box_pri .box_tori h4 {
+  font-weight: normal;
+  margin-bottom: 30px;
+  font-size: 150%;
+}
+@media only screen and (max-width: 768px) {
+  .con_pri .box_pri .box_tori h4 {
+    margin-bottom: 4%;
+  }
+}
+.con_pri .box_pri .box_tori .txt {
+  padding: 0 20px;
+}
+@media only screen and (max-width: 768px) {
+  .con_pri .box_pri .box_tori .txt {
+    padding: 0;
+  }
+}
+.con_pri .box_pri .box_num {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .con_pri .box_pri .box_num {
+    margin-top: 5%;
+  }
+}
+.con_pri .box_pri .box_num h4 {
+  font-weight: normal;
+  font-size: 113%;
+}
+.con_pri .box_pri .box_num .txt {
+  padding: 10px 0 0 20px;
+}
+@media only screen and (max-width: 768px) {
+  .con_pri .box_pri .box_num .txt {
+    padding: 3% 0 0 3%;
+  }
+}
+
+.box_check {
+  text-align: center;
+  margin: 1em auto;
+}
+.box_check label {
+  display: inline-block;
+}
+.box_check label span {
+  margin-left: .3em;
+}
+
+.btn {
+  text-align: center;
+}
+.btn input {
+  display: inline-block;
+  background: #eee;
+  padding: .5em 4em;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btn input:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+
+
+/*tokyo kart  とび先*/
+
+@media only screen and (min-width: 769px) {
+
+
+  .youtube {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 140px;
+
+  
+}
+
+.tokyo_kart_youtube_subttl {
+ display: block;
+ width: 30%;
+ text-align: center;
+ 
+ font-size: 20px;
+ background-color: #fff;
+ color: #000;
+ 
+}
+
+
+
+
+.tokyo_kart_youtube_ttl {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-left: -px;
+  font-size: 45px;
+ 
+ }
+
+
+ .tokyo_kart_youtube_text {
+  display: inline-block;
+ 
+  
+  text-align: left;
+  margin-top: 50px;
+  
+ 
+}
+
+.tokyo_kart_youtube_profession {
+  
+ 
+  
+  text-align: right;
+  margin-top: 20px;
+  
+ 
+}
+
+
+.tokyo_kart_youtube_subttl_center {
+  color: #fff;
+  padding: 10px 0;
+  padding-bottom: 200px;
+  background-color: #000000;
+  background-image: url(./assets/img/bg_story.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+
+
+}
+
+
+
+.tokyo_cart_youtube {
+  
+}
+
+.youtube-body {
+
+max-width: 850px;  
+color: #fff;
+padding-top: 60px;
+padding-bottom: 60px;
+background-color: #000000;
+background-image: url(./assets/img/bg_story.webp);
+background-repeat: no-repeat;
+background-position: center center;
+margin: 0 auto;
+background-size: cover;
+text-align: center;
+border-bottom: solid #ffffff 1px; 
+;
+
+
+
+}
+
+
+.youtube-body_02 {
+
+  max-width: 850px;  
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ 
+  background-image: url(./assets/img/bg_story.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+  background-size: cover;
+  text-align: center;
+ 
+  
+  
+  
+  
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 769px) {
+
+  .youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+  .youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .youtube-body {
+
+    max-width: 350px;  
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #000000;
+    background-image: url(./assets/img/bg_story.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    background-size: cover;
+    text-align: center;
+    border-bottom: solid #ffffff 1px; 
+    ;
+    
+    
+    
+    }
+    
+    
+    .youtube-body_02 {
+    
+      max-width: 350px;  
+      color: #fff;
+      padding-top: 10px;
+      padding-bottom: 10px;
+     
+      background-image: url(./assets/img/bg_story.webp);
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 0 auto;
+      background-size: cover;
+      text-align: center;
+      }
+
+
+
+
+      .tokyo_kart_youtube_profession {  
+        
+        text-align: right;
+        margin-top: 20px;
+
+      }
+
+
+
+      .tokyo_kart_youtube_ttl {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-left: -px;
+        font-size: 45px;
+       
+       }
+      
+
+
+       .tokyo_kart_youtube_subttl {
+        display: block;
+        width: 50%;
+        text-align: center;
+        
+        font-size: 20px;
+        background-color: #fff;
+        color: #000;
+        
+       }
+
+
+       .youtube {
+        padding-top: 130px;
+      }
+
+
+      .tokyo_kart_youtube_text {
+        display: inline-block;
+       
+        
+        text-align: left;
+        margin-top: 50px;
+        
+       
+      }
+
+    }
