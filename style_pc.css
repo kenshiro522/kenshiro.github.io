@@ -1,177 +1,187 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>aimant</title>
 
-<meta name="description" content="映像制作会社エマンのポートフォリオサイト">
-<meta name="keywords" content="映像,動画,撮影,カメラ,movie,video,camera,">
-<meta name="author" content="kenshiro-yamazawa" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<link rel="icon"  href="assets/images/favicon.webp" />
-<link rel="stylesheet" type="text/css" media="only screen and (max-device-width:666px),print" href="/css/style_pc.css"/>
-<link rel="stylesheet" type="text/css" media="only screen and (min-device-width:667px),print" href="/css/style_pc.css" />
-<link
-  rel="stylesheet"
-  href="css/destyle.css"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+$(function () {
+  var loading = $("#js-loading");
 
-</head>
+  //ページの読み込みが完了後にアニメーションを非表示・MVの高さを調整
+  $(window).on("load", function () {
+    var windowHeight = $(window).height();
+    $(".mv").height(windowHeight);
+    loading.delay("1000").fadeOut("2000");
+  });
 
-<body>
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v12.0"
-    nonce="l8bnbbly"></script>
+  //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+  setTimeout(function () {
+    loading.fadeOut("3000");
+  }, 8000);
 
-    <div id="js-loading" class="loading">
-      <div class="loading-animation">
-        <div class="atom-spinner">
-          <div class="spinner-inner">
-            <div class="spinner-line"></div>
-            <div class="spinner-line"></div>
-            <div class="spinner-line"></div>
-            <!--Chrome renders little circles malformed :(-->
-            <div class="spinner-circle">
-              &#9679;
-            </div>
-          </div>
-        </div>
-        <p class="loading-text"><img src="assets/img/loading.svg" alt="Loading"></p>
-      </div>
-    </div>
+  //画面リサイズ時にMVの高さを調整
+  $(window).resize(function () {
+    var windowHeight = $(window).height();
+    $(".mv").height(windowHeight);
+  });
 
+  //ページ内スクロール
+  $('a[href^="#"]').on("click", function () {
+    var speed = 300;
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? "html" : href);
+    var position = target.offset().top;
+    $("html, body").animate(
+      {
+        scrollTop: position,
+      },
+      speed,
+      "swing"
+    );
+    return false;
+  });
 
-  <div class="bgParallax">
-    <video class="bgParallax-video" playsinline muted autoplay loop>
-      <source src="assets/video/saucy.mp4" type="video/mp4">
-    </video>
-  </div>
+  //SP用のCTAボタンの表示
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    $spCTA = $(".spCTA");
+    $spCTA.hide();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 1000) {
+        $spCTA.fadeIn();
+      } else {
+        $spCTA.fadeOut();
+      }
+    });
+    $spCTA.on("click", function () {
+      $("body,html").animate({ scrollTop: 0 }, 300);
+      return false;
+    });
+  }
 
-  <!-- header -->
-  <header class=" header">
-    <div class="header-inner">
-      <div class="header-logo">
-        <a href="."><img src="assets/images/aimant.png" alt="aimant logo"></a>
-      </div>
-      <div class="header-nav">
-        <nav class="gnav">
-          <ul class="gnav-list">
-            <li class="gnav-about"><a href="about.html">about</a></li>
-            <li class="gnav-contact"><a href="/contact/index.html">contact</a></li>
-          </ul>
-          
-        </nav>
-      </div>
-    </div>
-  </header>
+  //オーディオの再生と停止
+  var audio = $("#js-audio").get(0);
+  var isPlaying = false;
+  audio.volume = 0.5;
 
-  <section class="mv">
-    <div class="mv-logo slide-bottom show">
-      <img class="main-img" src="assets/images/aimant.png">
-    </div>
-    
-    <div class="scrolldown"><span>Scroll</span></div>
-  </section>
-  
-  <main class="content">
-    <section class="story" id="story">
-      <h2 class="headingPrimary slide-bottom show">works</h2> 
-      <div class="container">
-        <div class="story-body">
-         
-                </div>
-              </div>
-              <ul>
-               
-                <div class="story-video_01 slide-bottom_01 show">
-                <li class="ag2video" data-ag2video>
-                  <a href="tokyo_kart.html" class="story-video_01_hover"> 
-                  <video src="assets/video/saucy_02.mp4" playsinline muted autoplay loop class="saucy"></video>
-                </a>
-                </li>
-           
-                <div class="video-text">
-                  <p class="video-title">SAUCY  DOG</p> 
-                  <p class="video-kinds">promotion video</p> 
-                
-               
-                </div>
-              </div>
-             
-              <div class="story-video_02 slide-bottom_02 show">
-              <li class="ag2video" data-ag2video>
-                <a href="tokyo_kart.html" class="story-video_02_hover"> 
-                <video src="assets/video/tokyo_kart_02.mp4" playsinline muted autoplay loop class="tokyo_cart"></video>
-              </a> 
-                <div class="video-text">
-                 
-                  <p class="video-title">JAPAN KART</p>
-                <p class="video-kinds">web commercial</p> 
-                
-
-                
-                
-              </li>
-              
-              </div>
-            </div>
-            <ul>
-               
-            </div>
-
-           
-              </div>
-              
-            </div>
-          </div>
-          
-
-        </div>
-
-      </div>
-    </section>
-
-    <div class="cta cta--01">
- 
-
-   
-
-  </main>
-
-  <!-- footer -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="snsShare">
-        <ul class="snsShare-list">
-          <li class="snsShare-item">
-            <div class="fb-like" data-href="URLが入る" data-width="" data-layout="button_count" data-action="like"
-              data-size="large" data-share="true"></div>
-          </li>
-          <li class="snsShare-item">
-            <a href="https://twitter.com/share?url=URLが入る" class="twitter-share-button" data-size="large"
-              data-show-count="false" data-lang="ja">ツイート</a>
-          </li>
-          <li class="snsShare-item">
-            <div class="line-it-button" data-lang="ja" data-type="share-c" data-url="URLが入る" style="display: none;">
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-copyright">&copy;aimant</div>
-    </div>
-  </footer>
-  <!-- /footer -->
+  $("#js-audio-play").click(function () {
+    if (isPlaying) {
+      audio.pause();
+      $(".audioSwitch").removeClass("on");
+      $(".audioSwitch-text").html("SOUND OFF");
+    } else {
+      audio.play();
+      $(".audioSwitch").addClass("on");
+      $(".audioSwitch-text").html("SOUND ON");
+    }
+  });
+  audio.onplaying = function () {
+    isPlaying = true;
+  };
+  audio.onpause = function () {
+    isPlaying = false;
+  };
+});
 
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="js/script.js"></script>
 
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer">
-  </script>
-</body>
-</html>
+
+
+  //ビデオホバー再生の再生と停止
+
+/*if(!Element.prototype.ag2closest){
+  Element.prototype.ag2closest = function(d){
+    let _el = this;
+    do{
+      if(_el.dataset[d] !== undefined) return _el;
+      _el = _el.parentElement || _el.parentNode;
+    }while(_el !== null && _el.nodeType === 1);
+    return null;
+  };
+}
+//指定ノードを子要素に持つか確認するメソッドを作成
+if(!Node.prototype.ag2contains){
+  Node.prototype.ag2contains = function(n){
+    while(n !== null){
+      if(n === this) return true;
+      n = n.parentElement || n.parentNode;
+    }
+    return false;
+  };
+}
+
+//初期設定値
+const ag2videoSettings = {
+  dataName: 'ag2video', //親要素に付与してあるdata属性名
+  classActive: 'ag2videoOn', //マウスオンで付与するクラス名
+};
+//現在再生中のvideo要素を保持する変数
+let currentVideo = null;
+const ag2video = {
+  on: function(t){
+    //クラスを付与
+    t.classList.add(ag2videoSettings.classActive);
+    //現在のvideo要素を代入して保持
+    currentVideo = t.querySelector('video');
+
+    //頭に戻す場合
+    // currentVideo.currentTime = 0;
+    //再生
+    currentVideo.play();
+
+    currentVideo.addEventListener('timeupdate', function(){
+      ag2video.progerss(t);
+    });
+  },
+  off: function(t){
+    //停止
+    currentVideo.pause();
+    //posterを再表示させる場合(リロード)
+    // currentVideo.load();
+
+    currentVideo.removeEventListener('timeupdate', function(){
+      ag2video.progerss(t);
+    });
+
+    //クラスを削除
+    t.classList.remove(ag2videoSettings.classActive);
+    currentVideo = null;
+  },
+  progerss: function(t){ //プログレスバー
+    if(t.classList.contains(ag2videoSettings.classActive)) return;
+    let percent = Math.floor(currentVideo.currentTime / currentVideo.duration * 1000) / 10;
+    console.log(percent+'%');
+  }
+};
+
+document.addEventListener('mouseover', function(){
+  //ターゲット(またはその親要素)が「data-ag2video」属性を持っていて、かつ現表示の要素ではない場合
+  let videoTarget = event.target.ag2closest(ag2videoSettings.dataName);
+  if(videoTarget && videoTarget !== currentVideo){
+    ag2video.on(videoTarget);
+  }
+});
+document.addEventListener('mouseout', function(){
+  //再生中の場合
+  if(currentVideo){
+    //移動先がブラウザウィンドウ外ではなく、かつ以下のどちらかの場合はreturn
+    //移動元が現表示の親要素、かつ移動先がその子要素の場合
+    //移動元が現表示の親要素の子要素、かつ移動先が現表示の親要素(またはその子要素)の場合
+    if( event.relatedTarget && ((event.target === currentVideo && event.target.ag2contains(event.relatedTarget)) || (currentVideo.ag2contains(event.target) && currentVideo === event.relatedTarget.ag2closest(ag2videoSettings.dataName))) ) return;
+
+    let videoTarget = event.target.ag2closest(ag2videoSettings.dataName);
+    ag2video.off(videoTarget);
+  }
+});
+
+*/
+
+
+$(function(){
+  $(window).on('load scroll', function() {
+     var winScroll = $(window).scrollTop();
+     var winHeight = $(window).height();
+     var scrollPos = winScroll + (winHeight * 0.8);
+
+     $(".show").each(function() {
+        if($(this).offset().top < scrollPos) {
+           $(this).css({opacity: 1, transform: 'translate(0, 0)'});
+        }
+     });
+  });
+});
