@@ -370,18 +370,50 @@ SOFTWARE. */
 .headingPrimary {
   display: block;
   position: relative;
-  font-size: 4em;
+  font-size: 5em;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.05em;
   color: rgb(255, 255, 255);
   text-align: left;
-  border-bottom: solid;
-  margin-bottom: 70px;
-  margin-left: 1rem;
+  margin-top: 50px;
+ 
+  
+  margin-left: 2.5rem;
   
 }
 
+
+.headingPrimary_02 {
+  display: block;
+  position: relative;
+  font-size: 5em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-top: 90px;
+  padding-top: 90px;
+ 
+  
+  margin-left: 2.5rem;
+  
+}
+
+
+
+.border {
+border-bottom: solid;
+margin-bottom: 70px;
+justify-content: center;
+}
+
+.border_02 {
+  border-bottom: solid;
+  margin-bottom: 20px;
+  justify-content: center;
+  }
 /*.headingPrimary::before {
   display: inline-block;
   content: "";
@@ -483,6 +515,8 @@ works-video
 ul{
   display: flex;
   justify-content: center;
+  flex-wrap: ;
+  
 }
 
 
@@ -500,6 +534,7 @@ ul{
   transition: all .2s ease-in-out;
   width: 100%;
   z-index: 1;
+  
  
   
 }
@@ -958,6 +993,10 @@ width: 120%;
     width: 100%;
    }
 
+   .member{ 
+   color: #fff;
+
+   }
 
 .member_context {
   max-width: 850px;  
@@ -1069,7 +1108,7 @@ padding-bottom: 200px;
 
 .member {
   max-width: 850px;  
-  color: #fff;
+  color: #000000;
   padding-top: 60px;
   padding-bottom: 45px;
   background-color: #000000;
@@ -1079,17 +1118,23 @@ padding-bottom: 200px;
   margin: 0 auto;
   background-size: cover;
   display: flex;
+  background-color: #fff
   
   ;
   
   
 
+
+}
+
+.member_color{
+  background-color: #ffffff;
 }
 
 
 .video_grapher .mikihiro_arai{
 
-  width: 900px; /*画像サイズ指定*/
+  width: 550px; /*画像サイズ指定*/
   margin: 0;
   padding: 0;
   overflow: hidden;
