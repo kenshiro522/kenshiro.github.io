@@ -375,13 +375,35 @@ SOFTWARE. */
   line-height: 1;
   letter-spacing: 0.05em;
   color: rgb(255, 255, 255);
-  text-align: left;
+  text-align: center;
   margin-top: 50px;
- 
+  margin-bottom: 60px;
   
-  margin-left: 2.5rem;
+  margin-right:40rem;
   
 }
+
+.headingPrimary::after {
+  position: absolute; /*positionをabsoluteに指定*/
+  content: "";
+  background-color: rgb(255, 255, 255); /*下線の色*/
+  width: 90em; /*線の幅*/
+  height: 1px; /*線の太さ*/
+  bottom: -20px; /*線のタテ位置*/
+  left: 50%;  /*線のヨコ位置*/
+  margin-left: 300px;
+  margin-top: -30px;
+  transform: translateX(-50%);　/*線のヨコ位置*/
+  
+}
+
+.heading {
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+  margin-right: 400px;
+}
+
 
 
 .headingPrimary_02 {
@@ -392,38 +414,34 @@ SOFTWARE. */
   line-height: 1;
   letter-spacing: 0.05em;
   color: rgb(255, 255, 255);
-  text-align: left;
-  margin-top: 90px;
-  padding-top: 90px;
- 
-  
-  margin-left: 2.5rem;
+  text-align: center;
+  margin-right: 90px;
+
   
 }
 
+.heading_subttl {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding-top: 25px;
+  text-align: left;
+  text-wrap: nowrap;
+  
+}
 
 
 .border {
-border-bottom: solid;
+ 
+border-bottom: solid 1px;
 margin-bottom: 70px;
 justify-content: center;
+width: 90px;
+margin-left: 50px;
 }
 
-.border_02 {
-  border-bottom: solid;
-  margin-bottom: 20px;
-  justify-content: center;
-  }
-/*.headingPrimary::before {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  bottom: -10px; /*下線の上下の位置*/
-  width: 220px; /*下線の幅*/
-  height: 8px; /*下線の太さ*/
-  background-color: white;
-}
-*/
+
+
+
 
 .headingPrimary--reverse {
   color: #ffffff;
@@ -512,11 +530,14 @@ works-video
 ---------------------------------*/
 
 
-ul{
+.video_all {
   display: flex;
   justify-content: center;
   flex-wrap: ;
-  
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+ 
 }
 
 
@@ -534,10 +555,13 @@ ul{
   transition: all .2s ease-in-out;
   width: 100%;
   z-index: 1;
+  padding-right: 20px;
   
  
   
 }
+
+
 
 .story-video_01_hover {
   display: block;
@@ -578,7 +602,7 @@ ul{
   transition: all .2s ease-in-out;
   width: 100%;
   z-index: 1;
-
+  padding-right: 20px;
   
  }
 
@@ -610,16 +634,17 @@ ul{
   background-color: ;
   
   
+  
 
 
 }
 
 .video-title{
   display: block;
-  font-size: 25px;
+  font-size: 18px;
  
- padding-bottom: 2px;
-  margin-top: 20px;
+ padding-bottom: 0px;
+  margin-top: 5px;
   width: 40%;
  
   
@@ -627,8 +652,8 @@ ul{
 
 .video-kinds{
   display: block;
-  font-size: 20px;
-  color: #ffffff;
+  font-size: 13px;
+  color: #d1d1d1;
   text-align: left;
   
   
