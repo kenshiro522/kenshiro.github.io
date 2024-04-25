@@ -377,13 +377,13 @@ SOFTWARE. */
   color: rgb(255, 255, 255);
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 60px;
+  margin-bottom: px;
   
-  margin-right:40rem;
+ /* margin-right:40rem;*/
   
 }
 
-.headingPrimary::after {
+/*.headingPrimary::after {
   position: absolute; /*positionをabsoluteに指定*/
   content: "";
   background-color: rgb(255, 255, 255); /*下線の色*/
@@ -450,6 +450,112 @@ margin-left: 50px;
 .headingPrimary--reverse::before {
   background-color: #ffffff;
 }
+
+
+/*--------------------------------
+ 小見出し
+---------------------------------*/
+
+.video_title_image {}
+
+
+.video_title {
+  display: flex;
+  width: 100%;
+  background-color: #eee;
+  
+ 
+ margin-top: 100px;
+ margin-bottom: 130px;
+}
+
+.video_title_left {
+
+}
+
+
+
+
+.video_title_right {
+ display: b;
+  
+ background-color: #eee;
+ color: #000;
+
+
+}
+
+.video_title_image img {
+display: block; 
+position: ;
+width: 100%;
+}
+
+
+.video_title_01 {
+font-size: 5rem;
+text-align: left;
+width: 100%;
+height: 100%;
+padding-top: 1.5em;
+ 
+color: #000000;
+
+
+
+}
+
+
+.video_title_01 {
+  font-size: 5rem;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  padding-top: 1.5em;
+
+  color: #000000;
+  margin-left: 8rem;
+  
+  
+  }
+
+
+
+.video_title_01_sub {
+ font-size: 20px;
+ text-align: left;
+ color: #000;
+ margin-top: 20px;
+ font-weight: 100;
+ 
+}
+
+.video_title_02 {
+  
+}
+
+
+.video_title_japanese {
+  font-size: 20px;
+  text-align: left;
+  color: #686868;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-weight: lighter;
+  
+}
+
+
+.video_title_container {
+  font-size: 20px;
+  text-align: left;
+  color: #686868;
+ 
+  margin-bottom: 10px;
+  
+}
+
+
 
 /*--------------------------------
  works
@@ -539,6 +645,7 @@ works-video
   margin-bottom: 50px;
  
 }
+
 
 
 
