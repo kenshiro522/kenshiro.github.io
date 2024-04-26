@@ -197,7 +197,7 @@ SOFTWARE. */
 
 .bgParallax-video {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   margin-left: -180px;
   vertical-align: bottom;
   object-fit: cover;
@@ -210,8 +210,13 @@ SOFTWARE. */
   position: fixed;
   z-index: 10;
   width: 100%;
-  background-color :#e6e1e1;
+  /*background-color :#e6e1e1;*/
   top : 0;
+}
+
+.header.change-color {
+  background-color: #e4e4e4;
+  transition: 0.6s;
 }
 
 .header-inner {
@@ -219,14 +224,15 @@ SOFTWARE. */
   position: relative;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 50px;
   padding: 0 30px;
+  margin-top: 20px;
 }
 
 .header-logo {
   line-height: 1;
   width: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 /*--------------------------------
@@ -244,7 +250,7 @@ SOFTWARE. */
   font-size: 19px;
   line-height: 1;
   letter-spacing: 0.1em;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .gnav-contact {
@@ -252,7 +258,9 @@ SOFTWARE. */
   line-height: 1;
   letter-spacing: 0.1em;
   color:rgb(0, 0, 0);
+  margin-right: 35px;
   margin-right: 20px;
+  margin-left: -20px;
 }
 
 /*--------------------------------
@@ -261,6 +269,7 @@ SOFTWARE. */
 .mv {
   position: relative;
   height: 100%;
+ 
 }
 
 .mv::after {
@@ -277,9 +286,19 @@ SOFTWARE. */
 .mv-logo{
   display: block;
   text-align: center;
-  padding-top: 350px;
+  margin-top: 10rem;
+  padding-top: 0px;
   
 }
+
+
+
+
+.mv-logo img {
+  width: 30%;
+  top : 50%;
+}
+
 
 
 
@@ -463,7 +482,7 @@ margin-left: 50px;
   display: flex;
   width: 100%;
   background-color: #eee;
-  
+  text-align: center;
  
  margin-top: 100px;
  margin-bottom: 130px;
@@ -492,40 +511,33 @@ width: 100%;
 }
 
 
-.video_title_01 {
-font-size: 5rem;
-text-align: left;
-width: 100%;
-height: 100%;
-padding-top: 1.5em;
- 
-color: #000000;
-
-
-
-}
 
 
 .video_title_01 {
-  font-size: 5rem;
-  text-align: left;
+  display: inline-block;
+  font-size: 4.3rem;
+  text-align: center;
   width: 100%;
   height: 100%;
-  padding-top: 1.5em;
+  padding-top: 2.3em;
 
   color: #000000;
-  margin-left: 8rem;
+
   
   
   }
 
 
 
+  
+
+
 .video_title_01_sub {
+  display: inline-block;
  font-size: 20px;
  text-align: left;
  color: #000;
- margin-top: 20px;
+ margin-top: 5px;
  font-weight: 100;
  
 }
