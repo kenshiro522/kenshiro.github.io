@@ -1,48 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>aimant</title>
 
-<meta name="description" content="映像制作会社エマンのポートフォリオサイト">
-<meta name="keywords" content="映像,動画,撮影,カメラ,movie,video,camera,">
-<meta name="author" content="kenshiro-yamazawa" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<link rel="icon"  href="assets/images/favicon.webp" />
-<link rel="stylesheet" type="text/css" media="only screen and (max-device-width:666px),print" href="/css/style_pc.css"/>
-<link rel="stylesheet" type="text/css" media="only screen and (min-device-width:667px),print" href="/css/style_pc.css" />
-<link
-  rel="stylesheet"
-  href="css/destyle.css"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <title>aimant</title>
+
+  <meta name="description" content="映像制作会社エマンのポートフォリオサイト">
+  <meta name="keywords" content="映像,動画,撮影,カメラ,movie,video,camera,">
+  <meta name="author" content="kenshiro-yamazawa" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" href="assets/images/favicon.webp" />
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width:666px),print"
+    href="/css/style_pc.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width:667px),print"
+    href="/css/style_pc.css" />
+  <link rel="stylesheet" href="css/destyle.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v12.0"
-    nonce="l8bnbbly"></script>
-
-    <div id="js-loading" class="loading">
-      <div class="loading-animation">
-        <div class="atom-spinner">
-          <div class="spinner-inner">
-            <div class="spinner-line"></div>
-            <div class="spinner-line"></div>
-            <div class="spinner-line"></div>
-            <!--Chrome renders little circles malformed :(-->
-            <div class="spinner-circle">
-              &#9679;
-            </div>
-          </div>
-        </div>
-        <p class="loading-text"><img src="assets/img/loading.svg" alt="Loading"></p>
-      </div>
+ 
+  <div class="box" id="my-spinner">
+   
+    <div class="spinner type1">
+      <span>Loading...</span>
     </div>
-
+  </div>
 
   <div class="bgParallax">
     <video class="bgParallax-video" playsinline muted autoplay loop>
@@ -51,18 +37,21 @@
   </div>
 
   <!-- header -->
-  <header class=" header">
+  <header class=" header js-header">
     <div class="header-inner">
-      <div class="header-logo">
+      <div class="header-logo js-logo">
         <a href="."><img src="assets/images/aimant.png" alt="aimant logo"></a>
       </div>
       <div class="header-nav">
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-about"><a href="about.html">about</a></li>
-            <li class="gnav-contact"><a href="/contact/index.html">contact</a></li>
-          </ul>
           
+            <li class="gnav-works_now"><a href=".">WORKS</a></li>
+            <li class="gnav-about"><a href="about.html">ABOUT</a></li>
+            <li class="gnav-contact"><a href="contact.php">CONTACT</a></li>
+            <li class="gnav-instagram"><a href="https://www.instagram.com/kaokoi_desuyo/" target="_blank"><img class="instagram" src="assets/images/instagram_nobg.png"></a></li>
+          </ul>
+
         </nav>
       </div>
     </div>
@@ -70,121 +59,166 @@
 
   <section class="mv">
     <div class="mv-logo">
-      <img class="main-img" src="assets/images/aimant.png">
+      <!--img class="main-img slide-bottom show" src="assets/images/aimant.png"-->
     </div>
-    
+
     <div class="scrolldown"><span>Scroll</span></div>
   </section>
-  
+
   <main class="content">
     <section class="story" id="story">
-      <h2 class="headingPrimary">WORKS.</h2> 
-      <!--div class="border"></div-->     
+      <h2 class="headingPrimary slide-top show">WORKS.</h2>
+      <!--div class="border"></div-->
 
-      <div class="container">
-        <div class="story-body">
-         
-               
-             <div class="video_border"> 
-              <ul class="video_all">
-               
-                <div class="story-video_01">
-                <li class="ag2video" data-ag2video>
-                  <a href="tokyo_kart.html" class="story-video_01_hover"> 
-                  <video src="assets/video/saucy_02.mp4" playsinline muted autoplay loop class="saucy"></video>
-                </a>
-                </li>
-           
-                <div class="video-text">
-                  <p class="video-title">SAUCY  DOG</p> 
-                  <p class="video-kinds">promotion video</p> 
+      <!--div class="container"-->
+        <!--div class="story-body"-->
+
+
+          <!--div class="video_border"-->
+
+          <!--ul class="video_title">
+              <li class="video_title_left">
                 
-               
-                </div>
-              </div>
+              <img class="video_title_image"src="assets/images/about_mv.png">
+              </li>  
              
-              <div class="story-video_02">
-              <li class="ag2video" data-ag2video>
-                <a href="tokyo_kart.html" class="story-video_02_hover"> 
-                <video src="assets/video/tokyo_kart_02.mp4" playsinline muted autoplay loop class="tokyo_cart"></video>
-              </a> 
-                <div class="video-text">
-                 
-                  <p class="video-title">JAPAN KART</p>
-                <p class="video-kinds">web commercial</p> 
-                
-
-                
-                
-              </li>
-
-              
-              
-              </div>
-              
-
-              
-            </div>
-            <ul>
-
-              <ul class="video_all">
-               
-                <div class="story-video_01">
-                <li class="ag2video" data-ag2video>
-                  <a href="tokyo_kart.html" class="story-video_01_hover"> 
-                  <video src="assets/video/saucy_02.mp4" playsinline muted autoplay loop class="saucy"></video>
-                </a>
-                </li>
-           
-                <div class="video-text">
-                  <p class="video-title">SAUCY  DOG</p> 
-                  <p class="video-kinds">promotion video</p> 
-                
-               
-                </div>
-              </div>
-             
-              <div class="story-video_02">
-              <li class="ag2video" data-ag2video>
-                <a href="tokyo_kart.html" class="story-video_02_hover"> 
-                <video src="assets/video/tokyo_kart_02.mp4" playsinline muted autoplay loop class="tokyo_cart"></video>
-              </a> 
-                <div class="video-text">
-                 
-                  <p class="video-title">JAPAN KART</p>
-                <p class="video-kinds">web commercial</p> 
-                
-
-                
-                
-              </li>
-
-              
-              
-              </div>
-              
-
-              
-            </div>
-            <ul>
-               
-            </div>
-
-           
-              </div>
-              
-            </div>
-          </div>
-          
+              <li class="video_title_01">Video<br><p class="video_title_01_sub">撮影から編集まで一括してサポート。<br>笑顔の瞬間を逃さず完璧な動画を作成いたします。
+              </p></li>
+             </ul-->
 
         </div>
 
-      </div>
-      
-    </section>
 
-    <div class="cta cta--01">
+
+
+
+
+
+
+
+
+
+
+
+        <ul class="video_all">
+
+          <div class="story-video_01 slide-bottom_02 show">
+            <li class="ag2video">
+              <a href="saucy.html" class="story-video_01_hover">
+                <video src="assets/video/saucy_02.mp4" playsinline muted autoplay loop class="saucy"></video>
+              </a>
+            </li>
+
+            <div class="video-text">
+              <p class="video-title">SAUCY DOG</p>
+              <p class="video-kinds">promotion Video</p>
+
+
+            </div>
+          </div>
+
+          <div class="story-video_02 slide-bottom_01 show">
+            <li class="ag2video">
+              <a href="japan_kart.html" class="story-video_02_hover">
+                <video src="assets/video/tokyo_kart_02.mp4" playsinline muted autoplay loop class="tokyo_cart"></video>
+              </a>
+              <div class="video-text">
+
+                <p class="video-title">JAPAN KART</p>
+                <p class="video-kinds">web commercial</p>
+
+
+
+
+            </li>
+
+
+
+          </div>
+
+
+
+      </div>
+    </ul>
+
+        <ul class="video_all">
+
+          <div class="story-video_01 slide-bottom_02 show">
+            <li class="ag2video">
+              <a href="daisy.html" class="story-video_01_hover">
+                <video src="assets/video/daisy.mp4" playsinline muted autoplay loop class="saucy"></video>
+              </a>
+            </li>
+
+            <div class="video-text">
+              <p class="video-title">DAISY</p>
+              <p class="video-kinds">promotion video</p>
+
+
+            </div>
+          </div>
+
+          <div class="story-video_02 slide-bottom_01 show">
+            <li class="ag2video">
+              <a href="cloud_nine.html" class="story-video_02_hover">
+                <video src="assets/video/cloud_nine.mp4" playsinline muted autoplay loop class="tokyo_cart"></video>
+              </a>
+              <div class="video-text">
+
+                <p class="video-title">CLOUD NINE CAMPING JAPAN</p>
+                <p class="video-kinds">promotion video</p>
+
+
+
+
+            </li>
+
+
+
+          </div>
+
+
+
+          </div>
+        </ul>
+            
+
+            </div>
+          </div>
+             
+        
+            </div>
+
+            </div>
+            
+            </div>
+           
+
+            </div>
+            
+
+            </div>
+            
+
+
+    </section>
  
+    
+
+
+
+    <!--ul class="video_title">
+      <li class="video_title_left">
+        
+      <img class="video_title_image"src="assets/images/about_mv.png">
+      </li>  
+     
+      <li class="video_title_01">Video<br><p class="video_title_01_sub">撮影から編集まで一括してサポート。<br>笑顔の瞬間を逃さず完璧な動画を作成いたします。
+      </p></li>
+     </ul-->
+
+    <!--div class="cta cta--01"-->
+
 
    
 
@@ -193,22 +227,12 @@
   <!-- footer -->
   <footer class="footer">
     <div class="footer-inner">
-      <div class="snsShare">
-        <ul class="snsShare-list">
-          <li class="snsShare-item">
-            <div class="fb-like" data-href="URLが入る" data-width="" data-layout="button_count" data-action="like"
-              data-size="large" data-share="true"></div>
-          </li>
-          <li class="snsShare-item">
-            <a href="https://twitter.com/share?url=URLが入る" class="twitter-share-button" data-size="large"
-              data-show-count="false" data-lang="ja">ツイート</a>
-          </li>
-          <li class="snsShare-item">
-            <div class="line-it-button" data-lang="ja" data-type="share-c" data-url="URLが入る" style="display: none;">
-            </div>
-          </li>
-        </ul>
-      </div>
+      <ul class="gnav-list">
+        <li class="gnav-works_now"><a href=".">WORKS</a></li>
+        <li class="gnav-about"><a href="about.html">ABOUT</a></li>
+        <li class="gnav-contact"><a href="contact.php">CONTACT</a></li>
+        <li class="gnav-instagram"><a href="https://www.instagram.com/kaokoi_desuyo/" target="_blank"><img class="instagram" src="assets/images/instagram_nobg.png"></a></li>
+      </ul>
       <div class="footer-copyright">&copy;aimant</div>
     </div>
   </footer>
@@ -219,8 +243,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/script.js"></script>
 
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer">
   </script>
 </body>
+
 </html>
