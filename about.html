@@ -9,8 +9,8 @@
 <meta name="author" content="kenshiro-yamazawa" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link rel="icon"  href="assets/images/favicon.webp" />
-<link rel="stylesheet" type="text/css" media="only screen and (max-device-width:666px),print" href="/css/style_sp.css"/>
-<link rel="stylesheet" type="text/css" media="only screen and (min-device-width:667px),print" href="/css/style_pc.css" />
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width:666px),print" href="/css/0509_style_sp.css"/>
+<link rel="stylesheet" type="text/css" media="only screen and (min-device-width:667px),print" href="/css/0509_style_pc.css" />
 <link
   rel="stylesheet"
   href="css/destyle.css"
@@ -31,18 +31,21 @@
 
 
   <!-- header -->
-  <header class=" header">
+  <header class=" header_video">
     <div class="header-inner">
-      <div class="header-logo">
-        <a href="."><img src="assets/images/aimant.png" alt="aimant_logo"></a>
+      <div class="header-logo_now">
+        <a href="."><img src="assets/images/aimant.png" alt="aimant logo"></a>
       </div>
       <div class="header-nav">
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-about"><a href="/about.html">about</a></li>
-            <li class="gnav-contact"><a href="/contact.html">contact</a></li>
-          </ul>
           
+            <li class="gnav-works"><a href="index.html">WORKS</a></li>
+            <li class="gnav-about_now"><a href="about.html">ABOUT</a></li>
+            <li class="gnav-contact"><a href="contact.php">CONTACT</a></li>
+            <li class="gnav-instagram"><a href="https://www.instagram.com/kaokoi_desuyo/" target="_blank"><img class="instagram" src="assets/images/instagram_nobg.png"></a></li>
+          </ul>
+
         </nav>
       </div>
     </div>
@@ -67,31 +70,44 @@
      
        
       <div class="container">
-        <div class="about-body">
-         <ul class="heading"> 
+       
+        <div class="about-body clearfix">
           <h2 class="headingPrimary_02">ABOUT.</h2>
+          <div class="float_left"> 
+         
         
-          
-         </ul>
-         <div class="border"></div>
-        
-        
-                      <div class="about-main_logo">
-            <img class="aimant_logo_white" src="assets/images/aimant_logo_white.png" alt="アバウト＿メインロゴ">
+    
+          <div class="about-main_logo">
+            <img class="aimant_logo_white" src="assets/images/aimant.png" alt="アバウト＿メインロゴ">
           </div>
-        
+           
 
            <div class="about-text">
              <p>aimant（エマン）はフランス語で[磁石]という意味があります。<br>
-              磁石のように人やものごとを「惹きつける」、何かと何かを「繋ぐ」。</p>
-              &nbsp;
-              <p>aimantのサービスを通して、価値を生み出し、<br>たくさんの人に喜んで
+              磁石のように人やものごとを「惹きつける」何かと何かを「繋ぐ」。</p>
+             
+              <p>aimantのサービスを通して、価値を生み出したくさんの人に喜んで
                    いただきたいです。</p>
-           </div>
-                   <div class="member_context">
+                   &nbsp;
+                  
+                   <p>関東を拠点に企業様や店舗のPVなどさまざまな映像を制作をしています。
+                    映像や写真を通してたくさんの人を笑顔にしたい、そんな思いで活動しています。</p>
+                    &nbsp; 
+                   <ul class="service_kind">          
+                    <li>video<br>photograph<br>drone</li>
+                    <li>映像<br>写真<br>空撮</li>
+                    </ul>
+                  </div> 
+                </div>
+                <div class="float_right"> 
+                  <img class="about_main" src="assets/images/arai_mikihiro.png" ait="">
+                 <p class="main_name">director/video grapher<br><span class="main_name_ttl">荒井 幹博</span><br>mikihiro arai</p>
+                </div>
+                </div>
+                   <!--div class="member_context">
                     <!--h5 class="member_ttl">MEMBER</h2-->
                   </div>
-          <div class="member_color">        
+          <!--div class="member_color">        
            <div class="member">
         
             <div class="video_grapher">
@@ -108,21 +124,14 @@
               </div>
             
             </div>  
-          </div>
+          </div-->
             
            
               
                 
               
             </div>
-            <div class="member_context_2">
-              <!--h5 class="member_ttl_2">関東を拠点に企業様や店舗のPVなどさまざまな映像を制作をしています。
-                映像や写真を通してたくさんの人を笑顔にしたい、そんな思いで活動しています。</h5>
-            </div-->
-             
-           
-    
-            </div>
+       
 
            
               </div>
@@ -135,7 +144,7 @@
       </div>
     </section>
 
-    <div class="cta cta--01">
+    <!--div class="cta cta--01"-->
  
 
    
@@ -145,22 +154,12 @@
   <!-- footer -->
   <footer class="footer">
     <div class="footer-inner">
-      <div class="snsShare">
-        <ul class="snsShare-list">
-          <li class="snsShare-item">
-            <div class="fb-like" data-href="URLが入る" data-width="" data-layout="button_count" data-action="like"
-              data-size="large" data-share="true"></div>
-          </li>
-          <li class="snsShare-item">
-            <a href="https://twitter.com/share?url=URLが入る" class="twitter-share-button" data-size="large"
-              data-show-count="false" data-lang="ja">ツイート</a>
-          </li>
-          <li class="snsShare-item">
-            <div class="line-it-button" data-lang="ja" data-type="share-c" data-url="URLが入る" style="display: none;">
-            </div>
-          </li>
-        </ul>
-      </div>
+      <ul class="gnav-list">
+        <li class="gnav-works_now"><a href=".">WORKS</a></li>
+        <li class="gnav-about"><a href="about.html">ABOUT</a></li>
+        <li class="gnav-contact"><a href="contact.php">CONTACT</a></li>
+        <li class="gnav-instagram"><a href="https://www.instagram.com/kaokoi_desuyo/" target="_blank"><img class="instagram" src="assets/images/instagram_nobg.png"></a></li>
+      </ul>
       <div class="footer-copyright">&copy;aimant</div>
     </div>
   </footer>
